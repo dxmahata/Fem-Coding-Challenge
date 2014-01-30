@@ -1,0 +1,19 @@
+Below is a coding assignment we'd like you to complete if you're interested in this position.  
+
+You may approach this in the modern programming language of your choice, but Python is preferred.
+
+Attached is a json file with data on 474 youtube videos in the television and movie category.  We'd like you to do the following:
+
+1) Assign tags as appropriate for famous actors (e.g. Jennifer Lawrence, Kate Walsh), movies (e.g. "The Hunger Games"), 
+and television shows (e.g. "Game of Thrones") to each youtube video.  
+[Note:  You may approach this however you choose, however, this is a very small data set and purely 
+agnostic methods are unlikely to work, so we suggest you use an external source of data to identify possibly 
+important actors, films and television shows and then assign them.  One source you may want to consider is 
+dbpedia, http://wiki.dbpedia.org., another is omdb, http://www.omdbapi.com - you are encouraged to 
+automate the fetching of this data].
+
+2) Create your own related video algorithm: Using the information given, as well as any tags you might assign, 
+create an algorithm than takes on video as input and generates three related videos from the set.  
+Using your algorithm, write a file that shows the related videos for every video in the set.
+
+Please share all the code and files you used on www.github.com with user: meghanab79.
