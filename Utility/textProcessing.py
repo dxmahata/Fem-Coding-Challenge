@@ -5,6 +5,7 @@ Created on Jan 31, 2014
 '''
 import re
 import os
+from nltk.stem import PorterStemmer
 
 class TextProcessing:
     
@@ -61,10 +62,20 @@ class TextProcessing:
         specialCharRemovedText = re.sub(r'[-+\\\[\]()?,><=*\:\'\"//\.]'," ",txt)
         return specialCharRemovedText
     
-    
+    def stem(self,tokens):
+        """method for stemming the tokens using nltk"""        
+        stemmer = PorterStemmer() #instantiating the stemmer
+        stemmedTokens = set([]) #set for containing the stemmed tokens
+        
+        for token in tokens:
+            stemmedTokens.add(stemmer.stem(token))
+        return stemmedTokens
+        
     def getFilteredText(self,txt):
         """method for getting the filtered text after removing the stop words"""
-        return self.tokenize(txt).difference(self.getStopWords())
+        return self.stem(self.tokenize(txt).difference(self.getStopWords()))
+    
+    
     
     
    
