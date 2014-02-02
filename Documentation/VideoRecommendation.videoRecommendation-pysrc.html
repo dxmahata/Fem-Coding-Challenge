@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>VideoRecommendation.videoRecommendation</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;VideoRecommendation ::
+        Module&nbsp;videoRecommendation
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="VideoRecommendation.videoRecommendation-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="VideoRecommendation.videoRecommendation-module.html">Module VideoRecommendation.videoRecommendation</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">Created on Jan 31, 2014</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Debanjan Mahata</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@contact: email: dxmahata@ualr.edu</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">operator</tt> <tt class="py-keyword">import</tt> <tt class="py-name">itemgetter</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"> </tt>
+<a name="RecommendVideo"></a><div id="RecommendVideo-def"><a name="L10"></a><tt class="py-lineno"> 10</tt> <a class="py-toggle" href="#" id="RecommendVideo-toggle" onclick="return toggle('RecommendVideo');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="VideoRecommendation.videoRecommendation.RecommendVideo-class.html">RecommendVideo</a><tt class="py-op">:</tt> </tt>
+</div><div id="RecommendVideo-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="RecommendVideo-expanded"><a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line">    <tt class="py-docstring">"""Constructor for RecommendVideo"""</tt> </tt>
+<a name="RecommendVideo.__init__"></a><div id="RecommendVideo.__init__-def"><a name="L12"></a><tt class="py-lineno"> 12</tt> <a class="py-toggle" href="#" id="RecommendVideo.__init__-toggle" onclick="return toggle('RecommendVideo.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="VideoRecommendation.videoRecommendation.RecommendVideo-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">vidTagIndxTable</tt><tt class="py-op">,</tt> <tt class="py-param">vidCollect</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="RecommendVideo.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="RecommendVideo.__init__-expanded"><a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">videoTagIndexTable</tt> <tt class="py-op">=</tt> <tt class="py-name">vidTagIndxTable</tt> <tt class="py-comment">#hashtable consisting of videos indexed by tags</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">videoCollection</tt> <tt class="py-op">=</tt> <tt class="py-name">vidCollect</tt> <tt class="py-comment">#hashtable consisting of videos indexed by videoIds</tt> </tt>
+</div><a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line">     </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">     </tt>
+<a name="RecommendVideo.getVideo"></a><div id="RecommendVideo.getVideo-def"><a name="L17"></a><tt class="py-lineno"> 17</tt> <a class="py-toggle" href="#" id="RecommendVideo.getVideo-toggle" onclick="return toggle('RecommendVideo.getVideo');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="VideoRecommendation.videoRecommendation.RecommendVideo-class.html#getVideo">getVideo</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">vidId</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="RecommendVideo.getVideo-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="RecommendVideo.getVideo-expanded"><a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">        <tt class="py-docstring">"""method of retrieving a video by its videoId from videoCollection"""</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">videoCollection</tt><tt class="py-op">[</tt><tt class="py-name">vidId</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">     </tt>
+<a name="RecommendVideo.recommendation"></a><div id="RecommendVideo.recommendation-def"><a name="L21"></a><tt class="py-lineno"> 21</tt> <a class="py-toggle" href="#" id="RecommendVideo.recommendation-toggle" onclick="return toggle('RecommendVideo.recommendation');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="VideoRecommendation.videoRecommendation.RecommendVideo-class.html#recommendation">recommendation</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="RecommendVideo.recommendation-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="RecommendVideo.recommendation-expanded"><a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">        <tt class="py-docstring">"""method that returns ranked recommendations for a given video"""</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">        <tt class="py-keyword">import</tt> <tt class="py-name">sys</tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line">         </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">        <tt class="py-comment">#output file for getting the videos and its related recommendations</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">        <tt class="py-name">sys</tt><tt class="py-op">.</tt><tt class="py-name">stdout</tt> <tt class="py-op">=</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">"VideoRecommendations.txt"</tt><tt class="py-op">,</tt><tt class="py-string">"w"</tt><tt class="py-op">)</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">         </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">        <tt class="py-comment">#getting video recommendations for each video provided in the dataset</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">video</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">videoCollection</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">            <tt class="py-name">videoObj</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Method VideoRecommendation.videoRecommendation.RecommendVideo.getVideo()=VideoRecommendation.videoRecommendation.RecommendVideo-class.html#getVideo"><a title="VideoRecommendation.videoRecommendation.RecommendVideo.getVideo" class="py-name" href="#" onclick="return doclink('link-0', 'getVideo', 'link-0');">getVideo</a></tt><tt class="py-op">(</tt><tt class="py-name">video</tt><tt class="py-op">)</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Method VideoRecommendation.videoRecommendation.RecommendVideo.ranking()=VideoRecommendation.videoRecommendation.RecommendVideo-class.html#ranking"><a title="VideoRecommendation.videoRecommendation.RecommendVideo.ranking" class="py-name" href="#" onclick="return doclink('link-1', 'ranking', 'link-1');">ranking</a></tt><tt class="py-op">(</tt><tt class="py-name">videoObj</tt><tt class="py-op">)</tt>                 </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">            <tt class="py-keyword">print</tt> <tt class="py-string">"\n\n-----------------------------------------------\n\n"</tt> </tt>
+</div><a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">             </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">             </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">         </tt>
+<a name="RecommendVideo.ranking"></a><div id="RecommendVideo.ranking-def"><a name="L36"></a><tt class="py-lineno"> 36</tt> <a class="py-toggle" href="#" id="RecommendVideo.ranking-toggle" onclick="return toggle('RecommendVideo.ranking');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="VideoRecommendation.videoRecommendation.RecommendVideo-class.html#ranking">ranking</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">videoObj</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="RecommendVideo.ranking-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="RecommendVideo.ranking-expanded"><a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for ranking the related videos"""</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"The selected video details are:"</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">         </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"\n The system generated id of the video is: "</tt><tt class="py-op">,</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Method VideoTagging.taggingVideos.Video.getVideoId()=VideoTagging.taggingVideos.Video-class.html#getVideoId"><a title="VideoTagging.taggingVideos.Video.getVideoId" class="py-name" href="#" onclick="return doclink('link-2', 'getVideoId', 'link-2');">getVideoId</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"\n The title of the video is: "</tt><tt class="py-op">,</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Method VideoTagging.taggingVideos.Video.getTitle()=VideoTagging.taggingVideos.Video-class.html#getTitle"><a title="VideoTagging.taggingVideos.Video.getTitle" class="py-name" href="#" onclick="return doclink('link-3', 'getTitle', 'link-3');">getTitle</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"\n The description of the video is: "</tt><tt class="py-op">,</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method VideoTagging.taggingVideos.Video.getDescription()=VideoTagging.taggingVideos.Video-class.html#getDescription"><a title="VideoTagging.taggingVideos.Video.getDescription" class="py-name" href="#" onclick="return doclink('link-4', 'getDescription', 'link-4');">getDescription</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-name">videoTags</tt> <tt class="py-op">=</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Method VideoTagging.taggingVideos.Video.getTags()=VideoTagging.taggingVideos.Video-class.html#getTags"><a title="VideoTagging.taggingVideos.Video.getTags" class="py-name" href="#" onclick="return doclink('link-5', 'getTags', 'link-5');">getTags</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"\n The tags associated with the video are: "</tt><tt class="py-op">,</tt> <tt class="py-name">videoTags</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">        <tt class="py-keyword">print</tt> <tt class="py-string">"\n The categories associated with the video are: "</tt><tt class="py-op">,</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-6" class="py-name" targets="Method VideoTagging.taggingVideos.Video.getCategories()=VideoTagging.taggingVideos.Video-class.html#getCategories"><a title="VideoTagging.taggingVideos.Video.getCategories" class="py-name" href="#" onclick="return doclink('link-6', 'getCategories', 'link-6');">getCategories</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">         </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-name">videoTokens</tt> <tt class="py-op">=</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Method VideoTagging.taggingVideos.Video.getToken()=VideoTagging.taggingVideos.Video-class.html#getToken"><a title="VideoTagging.taggingVideos.Video.getToken" class="py-name" href="#" onclick="return doclink('link-7', 'getToken', 'link-7');">getToken</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-comment">#print "\n The tokens associated with the video text is: ",videoTokens</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">         </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">         </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">videoTags</tt> <tt class="py-op">==</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">            <tt class="py-keyword">pass</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">            <tt class="py-keyword">print</tt> <tt class="py-string">"###################################################"</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">            <tt class="py-keyword">print</tt> <tt class="py-string">"\n\nThe videos from the provided dataset that are related to the given video are:"</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">            <tt class="py-name">count</tt> <tt class="py-op">=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">             </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">            <tt class="py-comment">#dictionary for storing the jaccard coefficient scores indexed by the videoIds</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">            <tt class="py-name">scoredVideos</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-op">}</tt>  </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">             </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">tag</tt> <tt class="py-keyword">in</tt> <tt class="py-name">videoTags</tt><tt class="py-op">:</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"><tt class="py-comment">#                    print "Tag: ", tag</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"><tt class="py-comment">#                    print "\n Videos related to the tag:"</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">                <tt class="py-comment">#list of videos related to the selected tag </tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                <tt class="py-name">videosRelatedToTag</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">videoTagIndexTable</tt><tt class="py-op">[</tt><tt class="py-name">tag</tt><tt class="py-op">]</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">                 </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">                <tt class="py-keyword">for</tt> <tt class="py-name">videos</tt> <tt class="py-keyword">in</tt> <tt class="py-name">videosRelatedToTag</tt><tt class="py-op">:</tt>                     </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                    <tt class="py-keyword">if</tt> <tt class="py-name">videos</tt> <tt class="py-op">==</tt> <tt class="py-name">videoObj</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="VideoTagging.taggingVideos.Video.getVideoId" class="py-name" href="#" onclick="return doclink('link-8', 'getVideoId', 'link-2');">getVideoId</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">                        <tt class="py-keyword">pass</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">                    <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">                        <tt class="py-name">jacCof</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name" targets="Method VideoRecommendation.videoRecommendation.RecommendVideo.jaccardCoefficient()=VideoRecommendation.videoRecommendation.RecommendVideo-class.html#jaccardCoefficient"><a title="VideoRecommendation.videoRecommendation.RecommendVideo.jaccardCoefficient" class="py-name" href="#" onclick="return doclink('link-9', 'jaccardCoefficient', 'link-9');">jaccardCoefficient</a></tt><tt class="py-op">(</tt><tt class="py-name">videoTokens</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="VideoRecommendation.videoRecommendation.RecommendVideo.getVideo" class="py-name" href="#" onclick="return doclink('link-10', 'getVideo', 'link-0');">getVideo</a></tt><tt class="py-op">(</tt><tt class="py-name">videos</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name"><a title="VideoTagging.taggingVideos.Video.getToken" class="py-name" href="#" onclick="return doclink('link-11', 'getToken', 'link-7');">getToken</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">                        <tt class="py-name">scoredVideos</tt><tt class="py-op">[</tt><tt class="py-name">videos</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">jacCof</tt>  </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">                         </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">                         </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">            <tt class="py-comment">#sorting the simlarity scores of the videos</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">            <tt class="py-name">items</tt> <tt class="py-op">=</tt> <tt class="py-name">scoredVideos</tt><tt class="py-op">.</tt><tt class="py-name">items</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">            <tt class="py-name">items</tt><tt class="py-op">.</tt><tt class="py-name">sort</tt><tt class="py-op">(</tt><tt class="py-name">key</tt><tt class="py-op">=</tt><tt class="py-name">itemgetter</tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-name">reverse</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt>       </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">             </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"><tt class="py-comment">#                if len(items) &lt;= 3:</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"><tt class="py-comment">#                    top3VideoIds = items</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"><tt class="py-comment">#                else:</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-comment">#                    top3VideoIds = items[:2]   </tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">vids</tt> <tt class="py-keyword">in</tt> <tt class="py-name">items</tt><tt class="py-op">:</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">                <tt class="py-name">vid</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="VideoRecommendation.videoRecommendation.RecommendVideo.getVideo" class="py-name" href="#" onclick="return doclink('link-12', 'getVideo', 'link-0');">getVideo</a></tt><tt class="py-op">(</tt><tt class="py-name">vids</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"Video No: "</tt><tt class="py-op">,</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">count</tt><tt class="py-op">)</tt>         </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"\n The system generated id of the video is: "</tt><tt class="py-op">,</tt> <tt class="py-name">vid</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="VideoTagging.taggingVideos.Video.getVideoId" class="py-name" href="#" onclick="return doclink('link-13', 'getVideoId', 'link-2');">getVideoId</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt>         </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"\n The title of the video is: "</tt><tt class="py-op">,</tt> <tt class="py-name">vid</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="VideoTagging.taggingVideos.Video.getTitle" class="py-name" href="#" onclick="return doclink('link-14', 'getTitle', 'link-3');">getTitle</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt>         </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"\n The description of the video is: "</tt><tt class="py-op">,</tt> <tt class="py-name">vid</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="VideoTagging.taggingVideos.Video.getDescription" class="py-name" href="#" onclick="return doclink('link-15', 'getDescription', 'link-4');">getDescription</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt>  </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"\n The tags associated with the video are: "</tt><tt class="py-op">,</tt> <tt class="py-name">vid</tt><tt class="py-op">.</tt><tt id="link-16" class="py-name"><a title="VideoTagging.taggingVideos.Video.getTags" class="py-name" href="#" onclick="return doclink('link-16', 'getTags', 'link-5');">getTags</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"\n The categories associated with the video are: "</tt><tt class="py-op">,</tt> <tt class="py-name">vid</tt><tt class="py-op">.</tt><tt id="link-17" class="py-name"><a title="VideoTagging.taggingVideos.Video.getCategories" class="py-name" href="#" onclick="return doclink('link-17', 'getCategories', 'link-6');">getCategories</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">                <tt class="py-comment">#print "\n The term vector associated with the video text is:", vid.getToken()       </tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">                <tt class="py-keyword">print</tt> <tt class="py-string">"*****************************************"</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                <tt class="py-name">count</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt>         </tt>
+</div><a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">                         </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">                             </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">                             </tt>
+<a name="RecommendVideo.jaccardCoefficient"></a><div id="RecommendVideo.jaccardCoefficient-def"><a name="L99"></a><tt class="py-lineno"> 99</tt> <a class="py-toggle" href="#" id="RecommendVideo.jaccardCoefficient-toggle" onclick="return toggle('RecommendVideo.jaccardCoefficient');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="VideoRecommendation.videoRecommendation.RecommendVideo-class.html#jaccardCoefficient">jaccardCoefficient</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">termVector1</tt><tt class="py-op">,</tt><tt class="py-param">termVector2</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="RecommendVideo.jaccardCoefficient-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="RecommendVideo.jaccardCoefficient-expanded"><a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for calculating the Jaccard Coefficient between the set of terms associated with the video being processed and the chosen related video"""</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">        <tt class="py-name">jacCof</tt> <tt class="py-op">=</tt> <tt class="py-name">float</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">termVector1</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">intersection</tt><tt class="py-op">(</tt><tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">termVector2</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">/</tt><tt class="py-op">(</tt><tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">termVector1</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">union</tt><tt class="py-op">(</tt><tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">termVector2</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">jacCof</tt> </tt>
+</div></div><a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Feb 02 00:41:45 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

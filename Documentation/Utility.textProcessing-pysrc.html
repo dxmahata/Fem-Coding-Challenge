@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Utility.textProcessing</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;Utility ::
+        Module&nbsp;textProcessing
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="Utility.textProcessing-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="Utility.textProcessing-module.html">Module Utility.textProcessing</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">Created on Jan 31, 2014</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Debanjan Mahata</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">@contact: email: dxmahata@ualr.edu</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">re</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">os</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">nltk</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Method Utility.textProcessing.TextProcessing.stem()=Utility.textProcessing.TextProcessing-class.html#stem"><a title="Utility.textProcessing.TextProcessing.stem" class="py-name" href="#" onclick="return doclink('link-0', 'stem', 'link-0');">stem</a></tt> <tt class="py-keyword">import</tt> <tt class="py-name">PorterStemmer</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"> </tt>
+<a name="TextProcessing"></a><div id="TextProcessing-def"><a name="L10"></a><tt class="py-lineno">10</tt> <a class="py-toggle" href="#" id="TextProcessing-toggle" onclick="return toggle('TextProcessing');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html">TextProcessing</a><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="TextProcessing-expanded"><a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line">     </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line">    <tt class="py-docstring">"""class for performing all text processing operations"""</tt> </tt>
+<a name="TextProcessing.__init__"></a><div id="TextProcessing.__init__-def"><a name="L13"></a><tt class="py-lineno">13</tt> <a class="py-toggle" href="#" id="TextProcessing.__init__-toggle" onclick="return toggle('TextProcessing.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.__init__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.__init__-expanded"><a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">        <tt class="py-docstring">"""constructor for TextProcessing class"""</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">stopWords</tt> <tt class="py-op">=</tt> <tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-comment">#set for containing the list of unique stop words</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> <tt class="py-comment">#text to be processed</tt> </tt>
+</div><a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line">     </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line">     </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">        </tt>
+<a name="TextProcessing.setText"></a><div id="TextProcessing.setText-def"><a name="L20"></a><tt class="py-lineno">20</tt> <a class="py-toggle" href="#" id="TextProcessing.setText-toggle" onclick="return toggle('TextProcessing.setText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#setText">setText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">txt</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.setText-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.setText-expanded"><a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">        <tt class="py-docstring">"""method of setting the text to be processed"""</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">txt</tt> </tt>
+</div><a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">         </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line">     </tt>
+<a name="TextProcessing.getText"></a><div id="TextProcessing.getText-def"><a name="L25"></a><tt class="py-lineno">25</tt> <a class="py-toggle" href="#" id="TextProcessing.getText-toggle" onclick="return toggle('TextProcessing.getText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#getText">getText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.getText-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.getText-expanded"><a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the text that is being processed"""</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> </tt>
+</div><a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">     </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">        </tt>
+<a name="TextProcessing.setStopWords"></a><div id="TextProcessing.setStopWords-def"><a name="L30"></a><tt class="py-lineno">30</tt> <a class="py-toggle" href="#" id="TextProcessing.setStopWords-toggle" onclick="return toggle('TextProcessing.setStopWords');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#setStopWords">setStopWords</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">file</tt><tt class="py-op">=</tt><tt class="py-string">"stopwords.txt"</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.setStopWords-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.setStopWords-expanded"><a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the stop word list from the given stopword file"""</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">lines</tt> <tt class="py-keyword">in</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-name">file</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">            <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">stopWords</tt><tt class="py-op">.</tt><tt class="py-name">add</tt><tt class="py-op">(</tt><tt class="py-name">lines</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">"\n"</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">     </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">             </tt>
+<a name="TextProcessing.getStopWords"></a><div id="TextProcessing.getStopWords-def"><a name="L36"></a><tt class="py-lineno">36</tt> <a class="py-toggle" href="#" id="TextProcessing.getStopWords-toggle" onclick="return toggle('TextProcessing.getStopWords');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#getStopWords">getStopWords</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.getStopWords-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.getStopWords-expanded"><a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the stop word list"""</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name" targets="Method Utility.textProcessing.TextProcessing.setStopWords()=Utility.textProcessing.TextProcessing-class.html#setStopWords"><a title="Utility.textProcessing.TextProcessing.setStopWords" class="py-name" href="#" onclick="return doclink('link-1', 'setStopWords', 'link-1');">setStopWords</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">stopWords</tt> </tt>
+</div><a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">     </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">     </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"> </tt>
+<a name="TextProcessing.tokenize"></a><div id="TextProcessing.tokenize-def"><a name="L43"></a><tt class="py-lineno">43</tt> <a class="py-toggle" href="#" id="TextProcessing.tokenize-toggle" onclick="return toggle('TextProcessing.tokenize');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#tokenize">tokenize</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">txt</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.tokenize-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.tokenize-expanded"><a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for tokenizing the text on blanks"""</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">        <tt class="py-name">tokenizedText</tt> <tt class="py-op">=</tt> <tt class="py-name">txt</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">" "</tt><tt class="py-op">)</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">        <tt class="py-name">tokenizedText</tt> <tt class="py-op">=</tt> <tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">tokenizedText</tt><tt class="py-op">)</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-string">""</tt> <tt class="py-keyword">in</tt> <tt class="py-name">tokenizedText</tt><tt class="py-op">:</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">            <tt class="py-name">tokenizedText</tt><tt class="py-op">.</tt><tt class="py-name">remove</tt><tt class="py-op">(</tt><tt class="py-string">""</tt><tt class="py-op">)</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">tokenizedText</tt> </tt>
+</div><a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">     </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">     </tt>
+<a name="TextProcessing.removeDigits"></a><div id="TextProcessing.removeDigits-def"><a name="L52"></a><tt class="py-lineno">52</tt> <a class="py-toggle" href="#" id="TextProcessing.removeDigits-toggle" onclick="return toggle('TextProcessing.removeDigits');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#removeDigits">removeDigits</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">txt</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.removeDigits-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.removeDigits-expanded"><a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for removing digit [0-9] characters from given text"""</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">        <tt class="py-name">digitRemovedText</tt> <tt class="py-op">=</tt> <tt class="py-name">re</tt><tt class="py-op">.</tt><tt class="py-name">sub</tt><tt class="py-op">(</tt><tt class="py-string">r'[\d]'</tt><tt class="py-op">,</tt><tt class="py-string">""</tt><tt class="py-op">,</tt><tt class="py-name">txt</tt><tt class="py-op">)</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">digitRemovedText</tt> </tt>
+</div><a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">     </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">     </tt>
+<a name="TextProcessing.removeSpecialChars"></a><div id="TextProcessing.removeSpecialChars-def"><a name="L58"></a><tt class="py-lineno">58</tt> <a class="py-toggle" href="#" id="TextProcessing.removeSpecialChars-toggle" onclick="return toggle('TextProcessing.removeSpecialChars');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#removeSpecialChars">removeSpecialChars</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">txt</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.removeSpecialChars-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.removeSpecialChars-expanded"><a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line"><tt class="py-docstring">        method for removing special characters from given text</tt> </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">        <tt class="py-name">specialCharRemovedText</tt> <tt class="py-op">=</tt> <tt class="py-name">re</tt><tt class="py-op">.</tt><tt class="py-name">sub</tt><tt class="py-op">(</tt><tt class="py-string">r'[-+\\\[\]()?,&gt;&lt;=*\:\'\"//\.]'</tt><tt class="py-op">,</tt><tt class="py-string">" "</tt><tt class="py-op">,</tt><tt class="py-name">txt</tt><tt class="py-op">)</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">specialCharRemovedText</tt> </tt>
+</div><a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">     </tt>
+<a name="TextProcessing.stem"></a><div id="TextProcessing.stem-def"><a name="L65"></a><tt class="py-lineno">65</tt> <a class="py-toggle" href="#" id="TextProcessing.stem-toggle" onclick="return toggle('TextProcessing.stem');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#stem">stem</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">tokens</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.stem-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.stem-expanded"><a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for stemming the tokens using nltk"""</tt>         </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">        <tt class="py-name">stemmer</tt> <tt class="py-op">=</tt> <tt class="py-name">PorterStemmer</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-comment">#instantiating the stemmer</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">        <tt class="py-name">stemmedTokens</tt> <tt class="py-op">=</tt> <tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-comment">#set for containing the stemmed tokens</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">         </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">token</tt> <tt class="py-keyword">in</tt> <tt class="py-name">tokens</tt><tt class="py-op">:</tt> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">            <tt class="py-name">stemmedTokens</tt><tt class="py-op">.</tt><tt class="py-name">add</tt><tt class="py-op">(</tt><tt class="py-name">stemmer</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name"><a title="Utility.textProcessing.TextProcessing.stem" class="py-name" href="#" onclick="return doclink('link-2', 'stem', 'link-0');">stem</a></tt><tt class="py-op">(</tt><tt class="py-name">token</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">stemmedTokens</tt> </tt>
+</div><a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">         </tt>
+<a name="TextProcessing.getFilteredText"></a><div id="TextProcessing.getFilteredText-def"><a name="L74"></a><tt class="py-lineno">74</tt> <a class="py-toggle" href="#" id="TextProcessing.getFilteredText-toggle" onclick="return toggle('TextProcessing.getFilteredText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="Utility.textProcessing.TextProcessing-class.html#getFilteredText">getFilteredText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">txt</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="TextProcessing.getFilteredText-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="TextProcessing.getFilteredText-expanded"><a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the filtered text after removing the stop words"""</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name"><a title="Utility.textProcessing.TextProcessing.stem" class="py-name" href="#" onclick="return doclink('link-3', 'stem', 'link-0');">stem</a></tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method Utility.textProcessing.TextProcessing.tokenize()=Utility.textProcessing.TextProcessing-class.html#tokenize"><a title="Utility.textProcessing.TextProcessing.tokenize" class="py-name" href="#" onclick="return doclink('link-4', 'tokenize', 'link-4');">tokenize</a></tt><tt class="py-op">(</tt><tt class="py-name">txt</tt><tt class="py-op">)</tt><tt class="py-op">.</tt><tt class="py-name">difference</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name" targets="Method Utility.textProcessing.TextProcessing.getStopWords()=Utility.textProcessing.TextProcessing-class.html#getStopWords"><a title="Utility.textProcessing.TextProcessing.getStopWords" class="py-name" href="#" onclick="return doclink('link-5', 'getStopWords', 'link-5');">getStopWords</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Feb 02 00:41:45 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

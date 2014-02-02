@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>pyAlchemy.AlchemyStructure</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;pyAlchemy ::
+        Module&nbsp;AlchemyStructure
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="pyAlchemy.AlchemyStructure-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="pyAlchemy.AlchemyStructure-module.html">Module pyAlchemy.AlchemyStructure</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">Created on Jan 31, 2014</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Debanjan Mahata</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">@contact: email: dxmahata@ualr.edu</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"> </tt>
+<a name="Sentiment"></a><div id="Sentiment-def"><a name="L7"></a><tt class="py-lineno">  7</tt> <a class="py-toggle" href="#" id="Sentiment-toggle" onclick="return toggle('Sentiment');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Sentiment-class.html">Sentiment</a><tt class="py-op">:</tt> </tt>
+</div><div id="Sentiment-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Sentiment-expanded"><a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Sentiment"""</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line">     </tt>
+<a name="Sentiment.__init__"></a><div id="Sentiment.__init__-def"><a name="L10"></a><tt class="py-lineno"> 10</tt> <a class="py-toggle" href="#" id="Sentiment.__init__-toggle" onclick="return toggle('Sentiment.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Sentiment-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sentiment.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Sentiment.__init__-expanded"><a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line">        <tt class="py-docstring">"""Constructor of Sentiment class"""</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">type</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">score</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line">     </tt>
+<a name="Sentiment.getType"></a><div id="Sentiment.getType-def"><a name="L15"></a><tt class="py-lineno"> 15</tt> <a class="py-toggle" href="#" id="Sentiment.getType-toggle" onclick="return toggle('Sentiment.getType');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Sentiment-class.html#getType">getType</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sentiment.getType-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Sentiment.getType-expanded"><a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the category of the sentiment -&gt; positive, negative, neutral"""</tt> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">type</tt> </tt>
+</div><a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line">     </tt>
+<a name="Sentiment.getScore"></a><div id="Sentiment.getScore-def"><a name="L19"></a><tt class="py-lineno"> 19</tt> <a class="py-toggle" href="#" id="Sentiment.getScore-toggle" onclick="return toggle('Sentiment.getScore');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Sentiment-class.html#getScore">getScore</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sentiment.getScore-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Sentiment.getScore-expanded"><a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the score of the sentiment"""</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">score</tt> </tt>
+</div><a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line">     </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line">     </tt>
+<a name="Sentiment.setType"></a><div id="Sentiment.setType-def"><a name="L24"></a><tt class="py-lineno"> 24</tt> <a class="py-toggle" href="#" id="Sentiment.setType-toggle" onclick="return toggle('Sentiment.setType');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Sentiment-class.html#setType">setType</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">type</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sentiment.setType-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Sentiment.setType-expanded"><a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the category of the sentiment"""</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">type</tt> <tt class="py-op">=</tt> <tt class="py-name">type</tt> </tt>
+</div><a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">     </tt>
+<a name="Sentiment.setScore"></a><div id="Sentiment.setScore-def"><a name="L28"></a><tt class="py-lineno"> 28</tt> <a class="py-toggle" href="#" id="Sentiment.setScore-toggle" onclick="return toggle('Sentiment.setScore');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Sentiment-class.html#setScore">setScore</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">score</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Sentiment.setScore-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Sentiment.setScore-expanded"><a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the score of the sentiment """</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">score</tt> <tt class="py-op">=</tt> <tt class="py-name">score</tt> </tt>
+</div></div><a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"> </tt>
+<a name="Entity"></a><div id="Entity-def"><a name="L34"></a><tt class="py-lineno"> 34</tt> <a class="py-toggle" href="#" id="Entity-toggle" onclick="return toggle('Entity');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html">Entity</a><tt class="py-op">:</tt> </tt>
+</div><div id="Entity-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Entity-expanded"><a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line">    <tt class="py-docstring">""""Class for representing Entity"""</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line">     </tt>
+<a name="Entity.__init__"></a><div id="Entity.__init__-def"><a name="L37"></a><tt class="py-lineno"> 37</tt> <a class="py-toggle" href="#" id="Entity.__init__-toggle" onclick="return toggle('Entity.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.__init__-expanded"><a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">        <tt class="py-docstring">"""Constructor for the Entity class"""</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">frequecy</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-0" class="py-name" targets="Method pyAlchemy.alchemyapi.AlchemyAPI.sentiment()=pyAlchemy.alchemyapi.AlchemyAPI-class.html#sentiment"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-0', 'sentiment', 'link-0');">sentiment</a></tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">type</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">         </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">     </tt>
+<a name="Entity.setName"></a><div id="Entity.setName-def"><a name="L46"></a><tt class="py-lineno"> 46</tt> <a class="py-toggle" href="#" id="Entity.setName-toggle" onclick="return toggle('Entity.setName');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#setName">setName</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">name</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.setName-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.setName-expanded"><a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the name of the entity  """</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> <tt class="py-op">=</tt> <tt class="py-name">name</tt> </tt>
+</div><a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">     </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">     </tt>
+<a name="Entity.getName"></a><div id="Entity.getName-def"><a name="L51"></a><tt class="py-lineno"> 51</tt> <a class="py-toggle" href="#" id="Entity.getName-toggle" onclick="return toggle('Entity.getName');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#getName">getName</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.getName-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.getName-expanded"><a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the name of the entity"""</tt>    </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">name</tt> </tt>
+</div><a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">     </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"> </tt>
+<a name="Entity.setFreq"></a><div id="Entity.setFreq-def"><a name="L56"></a><tt class="py-lineno"> 56</tt> <a class="py-toggle" href="#" id="Entity.setFreq-toggle" onclick="return toggle('Entity.setFreq');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#setFreq">setFreq</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">freq</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.setFreq-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.setFreq-expanded"><a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the frequency of the entity"""</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">frequency</tt> <tt class="py-op">=</tt> <tt class="py-name">freq</tt> </tt>
+</div><a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">              </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line"> </tt>
+<a name="Entity.getFreq"></a><div id="Entity.getFreq-def"><a name="L61"></a><tt class="py-lineno"> 61</tt> <a class="py-toggle" href="#" id="Entity.getFreq-toggle" onclick="return toggle('Entity.getFreq');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#getFreq">getFreq</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.getFreq-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.getFreq-expanded"><a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the frequency of the entity"""</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">frequency</tt> </tt>
+</div><a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">     </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"> </tt>
+<a name="Entity.getSentiment"></a><div id="Entity.getSentiment-def"><a name="L66"></a><tt class="py-lineno"> 66</tt> <a class="py-toggle" href="#" id="Entity.getSentiment-toggle" onclick="return toggle('Entity.getSentiment');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#getSentiment">getSentiment</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.getSentiment-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.getSentiment-expanded"><a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the sentiment of entity"""</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-1" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-1', 'sentiment', 'link-0');">sentiment</a></tt> </tt>
+</div><a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">     </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"> </tt>
+<a name="Entity.setSentiment"></a><div id="Entity.setSentiment-def"><a name="L71"></a><tt class="py-lineno"> 71</tt> <a class="py-toggle" href="#" id="Entity.setSentiment-toggle" onclick="return toggle('Entity.setSentiment');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#setSentiment">setSentiment</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">sentiment</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.setSentiment-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.setSentiment-expanded"><a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the sentiment"""</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-2', 'sentiment', 'link-0');">sentiment</a></tt> <tt class="py-op">=</tt> <tt id="link-3" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-3', 'sentiment', 'link-0');">sentiment</a></tt> </tt>
+</div><a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">         </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">     </tt>
+<a name="Entity.setRelevance"></a><div id="Entity.setRelevance-def"><a name="L76"></a><tt class="py-lineno"> 76</tt> <a class="py-toggle" href="#" id="Entity.setRelevance-toggle" onclick="return toggle('Entity.setRelevance');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#setRelevance">setRelevance</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">relev</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.setRelevance-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.setRelevance-expanded"><a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the relevance"""</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> <tt class="py-op">=</tt> <tt class="py-name">relev</tt> </tt>
+</div><a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">         </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">     </tt>
+<a name="Entity.getRelevance"></a><div id="Entity.getRelevance-def"><a name="L81"></a><tt class="py-lineno"> 81</tt> <a class="py-toggle" href="#" id="Entity.getRelevance-toggle" onclick="return toggle('Entity.getRelevance');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#getRelevance">getRelevance</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.getRelevance-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.getRelevance-expanded"><a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the relevance"""</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> </tt>
+</div><a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">     </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line"> </tt>
+<a name="Entity.setType"></a><div id="Entity.setType-def"><a name="L86"></a><tt class="py-lineno"> 86</tt> <a class="py-toggle" href="#" id="Entity.setType-toggle" onclick="return toggle('Entity.setType');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#setType">setType</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">type</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.setType-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.setType-expanded"><a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the type of the entity"""</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">type</tt> <tt class="py-op">=</tt> <tt class="py-name">type</tt> </tt>
+</div><a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">         </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"> </tt>
+<a name="Entity.getType"></a><div id="Entity.getType-def"><a name="L91"></a><tt class="py-lineno"> 91</tt> <a class="py-toggle" href="#" id="Entity.getType-toggle" onclick="return toggle('Entity.getType');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Entity-class.html#getType">getType</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Entity.getType-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Entity.getType-expanded"><a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the type of the entity"""</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">type</tt> </tt>
+</div></div><a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">     </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">     </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">     </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"> </tt>
+<a name="Keyword"></a><div id="Keyword-def"><a name="L98"></a><tt class="py-lineno"> 98</tt> <a class="py-toggle" href="#" id="Keyword-toggle" onclick="return toggle('Keyword');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html">Keyword</a><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Keyword-expanded"><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Keyword Extraction"""</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">     </tt>
+<a name="Keyword.__init__"></a><div id="Keyword.__init__-def"><a name="L101"></a><tt class="py-lineno">101</tt> <a class="py-toggle" href="#" id="Keyword.__init__-toggle" onclick="return toggle('Keyword.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.__init__-expanded"><a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-docstring">"""constructor for Keyword class"""</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-4', 'sentiment', 'link-0');">sentiment</a></tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">         </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">     </tt>
+<a name="Keyword.setText"></a><div id="Keyword.setText-def"><a name="L108"></a><tt class="py-lineno">108</tt> <a class="py-toggle" href="#" id="Keyword.setText-toggle" onclick="return toggle('Keyword.setText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#setText">setText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">text</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.setText-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.setText-expanded"><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the text"""</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">text</tt> </tt>
+</div><a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">         </tt>
+<a name="Keyword.getText"></a><div id="Keyword.getText-def"><a name="L112"></a><tt class="py-lineno">112</tt> <a class="py-toggle" href="#" id="Keyword.getText-toggle" onclick="return toggle('Keyword.getText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#getText">getText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.getText-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.getText-expanded"><a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the text"""</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> </tt>
+</div><a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">     </tt>
+<a name="Keyword.setRelevance"></a><div id="Keyword.setRelevance-def"><a name="L116"></a><tt class="py-lineno">116</tt> <a class="py-toggle" href="#" id="Keyword.setRelevance-toggle" onclick="return toggle('Keyword.setRelevance');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#setRelevance">setRelevance</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">relev</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.setRelevance-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.setRelevance-expanded"><a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the relevance"""</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> <tt class="py-op">=</tt> <tt class="py-name">relev</tt> </tt>
+</div><a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">         </tt>
+<a name="Keyword.getRelevance"></a><div id="Keyword.getRelevance-def"><a name="L120"></a><tt class="py-lineno">120</tt> <a class="py-toggle" href="#" id="Keyword.getRelevance-toggle" onclick="return toggle('Keyword.getRelevance');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#getRelevance">getRelevance</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.getRelevance-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.getRelevance-expanded"><a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the relevance"""</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> </tt>
+</div><a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">     </tt>
+<a name="Keyword.setSentiment"></a><div id="Keyword.setSentiment-def"><a name="L124"></a><tt class="py-lineno">124</tt> <a class="py-toggle" href="#" id="Keyword.setSentiment-toggle" onclick="return toggle('Keyword.setSentiment');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#setSentiment">setSentiment</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">sentiment</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.setSentiment-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.setSentiment-expanded"><a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the sentiment"""</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-5', 'sentiment', 'link-0');">sentiment</a></tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-6', 'sentiment', 'link-0');">sentiment</a></tt> </tt>
+</div><a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">         </tt>
+<a name="Keyword.getSentiment"></a><div id="Keyword.getSentiment-def"><a name="L128"></a><tt class="py-lineno">128</tt> <a class="py-toggle" href="#" id="Keyword.getSentiment-toggle" onclick="return toggle('Keyword.getSentiment');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Keyword-class.html#getSentiment">getSentiment</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Keyword.getSentiment-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Keyword.getSentiment-expanded"><a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the sentiment"""</tt> </tt>
+<a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-7" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.sentiment" class="py-name" href="#" onclick="return doclink('link-7', 'sentiment', 'link-0');">sentiment</a></tt> </tt>
+</div></div><a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">     </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"> </tt>
+<a name="Concept"></a><div id="Concept-def"><a name="L133"></a><tt class="py-lineno">133</tt> <a class="py-toggle" href="#" id="Concept-toggle" onclick="return toggle('Concept');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Concept-class.html">Concept</a><tt class="py-op">:</tt> </tt>
+</div><div id="Concept-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Concept-expanded"><a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Concept Tagging"""</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line">     </tt>
+<a name="Concept.__init__"></a><div id="Concept.__init__-def"><a name="L136"></a><tt class="py-lineno">136</tt> <a class="py-toggle" href="#" id="Concept.__init__-toggle" onclick="return toggle('Concept.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Concept-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Concept.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Concept.__init__-expanded"><a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">        <tt class="py-docstring">"""Constructor for Concept class"""</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line">         </tt>
+<a name="Concept.setText"></a><div id="Concept.setText-def"><a name="L141"></a><tt class="py-lineno">141</tt> <a class="py-toggle" href="#" id="Concept.setText-toggle" onclick="return toggle('Concept.setText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Concept-class.html#setText">setText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">text</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Concept.setText-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Concept.setText-expanded"><a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the text"""</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">text</tt> </tt>
+</div><a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line">         </tt>
+<a name="Concept.getText"></a><div id="Concept.getText-def"><a name="L145"></a><tt class="py-lineno">145</tt> <a class="py-toggle" href="#" id="Concept.getText-toggle" onclick="return toggle('Concept.getText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Concept-class.html#getText">getText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Concept.getText-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Concept.getText-expanded"><a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the text"""</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> </tt>
+</div><a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line">     </tt>
+<a name="Concept.setRelevance"></a><div id="Concept.setRelevance-def"><a name="L149"></a><tt class="py-lineno">149</tt> <a class="py-toggle" href="#" id="Concept.setRelevance-toggle" onclick="return toggle('Concept.setRelevance');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Concept-class.html#setRelevance">setRelevance</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">relev</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Concept.setRelevance-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Concept.setRelevance-expanded"><a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the relevance"""</tt> </tt>
+<a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt> <tt class="py-op">=</tt> <tt class="py-name">relev</tt> </tt>
+</div><a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line">         </tt>
+<a name="Concept.getRelevance"></a><div id="Concept.getRelevance-def"><a name="L153"></a><tt class="py-lineno">153</tt> <a class="py-toggle" href="#" id="Concept.getRelevance-toggle" onclick="return toggle('Concept.getRelevance');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Concept-class.html#getRelevance">getRelevance</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Concept.getRelevance-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Concept.getRelevance-expanded"><a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the relevance"""</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">relevance</tt>     </tt>
+</div></div><a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line">     </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line"> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line"> </tt>
+<a name="Categorization"></a><div id="Categorization-def"><a name="L159"></a><tt class="py-lineno">159</tt> <a class="py-toggle" href="#" id="Categorization-toggle" onclick="return toggle('Categorization');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Categorization-class.html">Categorization</a><tt class="py-op">:</tt> </tt>
+</div><div id="Categorization-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Categorization-expanded"><a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Text Categorization"""</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">     </tt>
+<a name="Categorization.__init__"></a><div id="Categorization.__init__-def"><a name="L162"></a><tt class="py-lineno">162</tt> <a class="py-toggle" href="#" id="Categorization.__init__-toggle" onclick="return toggle('Categorization.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Categorization-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Categorization.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Categorization.__init__-expanded"><a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line">        <tt class="py-docstring">"""constructor for Categorization class"""</tt> </tt>
+<a name="L164"></a><tt class="py-lineno">164</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">score</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line">         </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line"> </tt>
+<a name="Categorization.setText"></a><div id="Categorization.setText-def"><a name="L168"></a><tt class="py-lineno">168</tt> <a class="py-toggle" href="#" id="Categorization.setText-toggle" onclick="return toggle('Categorization.setText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Categorization-class.html#setText">setText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">text</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Categorization.setText-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Categorization.setText-expanded"><a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the text"""</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt> <tt class="py-op">=</tt> <tt class="py-name">text</tt> </tt>
+</div><a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">         </tt>
+<a name="Categorization.getText"></a><div id="Categorization.getText-def"><a name="L172"></a><tt class="py-lineno">172</tt> <a class="py-toggle" href="#" id="Categorization.getText-toggle" onclick="return toggle('Categorization.getText');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Categorization-class.html#getText">getText</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Categorization.getText-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Categorization.getText-expanded"><a name="L173"></a><tt class="py-lineno">173</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the text"""</tt> </tt>
+<a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">text</tt>    </tt>
+</div><a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line">       </tt>
+<a name="Categorization.setScore"></a><div id="Categorization.setScore-def"><a name="L176"></a><tt class="py-lineno">176</tt> <a class="py-toggle" href="#" id="Categorization.setScore-toggle" onclick="return toggle('Categorization.setScore');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Categorization-class.html#setScore">setScore</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt><tt class="py-param">score</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Categorization.setScore-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Categorization.setScore-expanded"><a name="L177"></a><tt class="py-lineno">177</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the score of the sentiment"""</tt> </tt>
+<a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">score</tt> <tt class="py-op">=</tt> <tt class="py-name">score</tt> </tt>
+</div><a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line">         </tt>
+<a name="Categorization.getScore"></a><div id="Categorization.getScore-def"><a name="L180"></a><tt class="py-lineno">180</tt> <a class="py-toggle" href="#" id="Categorization.getScore-toggle" onclick="return toggle('Categorization.getScore');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Categorization-class.html#getScore">getScore</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Categorization.getScore-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Categorization.getScore-expanded"><a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the score of the sentiment"""</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">score</tt> </tt>
+</div></div><a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line"> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line"> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line"> </tt>
+<a name="Relation"></a><div id="Relation-def"><a name="L186"></a><tt class="py-lineno">186</tt> <a class="py-toggle" href="#" id="Relation-toggle" onclick="return toggle('Relation');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html">Relation</a><tt class="py-op">:</tt>     </tt>
+</div><a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Relation Extraction"""</tt> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line"> </tt>
+<a name="Relation.__init__"></a><div id="Relation.__init__-def"><a name="L189"></a><tt class="py-lineno">189</tt> <a class="py-toggle" href="#" id="Relation.__init__-toggle" onclick="return toggle('Relation.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.__init__-expanded"><a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">        <tt class="py-docstring">"""constructor for Relation class"""</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">subject</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">action</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">object</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line">         </tt>
+<a name="Relation.setSubject"></a><div id="Relation.setSubject-def"><a name="L195"></a><tt class="py-lineno">195</tt> <a class="py-toggle" href="#" id="Relation.setSubject-toggle" onclick="return toggle('Relation.setSubject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#setSubject">setSubject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">subject</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.setSubject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.setSubject-expanded"><a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the subject"""</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">subject</tt> <tt class="py-op">=</tt> <tt class="py-name">subject</tt> </tt>
+</div><a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">         </tt>
+<a name="Relation.getSubject"></a><div id="Relation.getSubject-def"><a name="L199"></a><tt class="py-lineno">199</tt> <a class="py-toggle" href="#" id="Relation.getSubject-toggle" onclick="return toggle('Relation.getSubject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#getSubject">getSubject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.getSubject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.getSubject-expanded"><a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the subject"""</tt> </tt>
+<a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">subject</tt> </tt>
+</div><a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line">     </tt>
+<a name="Relation.setAction"></a><div id="Relation.setAction-def"><a name="L203"></a><tt class="py-lineno">203</tt> <a class="py-toggle" href="#" id="Relation.setAction-toggle" onclick="return toggle('Relation.setAction');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#setAction">setAction</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">action</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.setAction-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.setAction-expanded"><a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the action"""</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">action</tt> <tt class="py-op">=</tt> <tt class="py-name">action</tt> </tt>
+</div><a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">         </tt>
+<a name="Relation.getAction"></a><div id="Relation.getAction-def"><a name="L207"></a><tt class="py-lineno">207</tt> <a class="py-toggle" href="#" id="Relation.getAction-toggle" onclick="return toggle('Relation.getAction');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#getAction">getAction</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.getAction-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.getAction-expanded"><a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the action"""</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">action</tt> </tt>
+</div><a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line">     </tt>
+<a name="Relation.setObject"></a><div id="Relation.setObject-def"><a name="L211"></a><tt class="py-lineno">211</tt> <a class="py-toggle" href="#" id="Relation.setObject-toggle" onclick="return toggle('Relation.setObject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#setObject">setObject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">obj</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.setObject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.setObject-expanded"><a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the object"""</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">object</tt> <tt class="py-op">=</tt> <tt class="py-name">obj</tt> </tt>
+</div><a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line">         </tt>
+<a name="Relation.getObject"></a><div id="Relation.getObject-def"><a name="L215"></a><tt class="py-lineno">215</tt> <a class="py-toggle" href="#" id="Relation.getObject-toggle" onclick="return toggle('Relation.getObject');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Relation-class.html#getObject">getObject</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Relation.getObject-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Relation.getObject-expanded"><a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the object"""</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">object</tt> </tt>
+</div></div><a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line">                 </tt>
+<a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line">     </tt>
+<a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line"> </tt>
+<a name="Language"></a><div id="Language-def"><a name="L221"></a><tt class="py-lineno">221</tt> <a class="py-toggle" href="#" id="Language-toggle" onclick="return toggle('Language');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html">Language</a><tt class="py-op">:</tt> </tt>
+</div><div id="Language-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Language-expanded"><a name="L222"></a><tt class="py-lineno">222</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Language Detection"""</tt> </tt>
+<a name="L223"></a><tt class="py-lineno">223</tt>  <tt class="py-line">     </tt>
+<a name="Language.__init__"></a><div id="Language.__init__-def"><a name="L224"></a><tt class="py-lineno">224</tt> <a class="py-toggle" href="#" id="Language.__init__-toggle" onclick="return toggle('Language.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.__init__-expanded"><a name="L225"></a><tt class="py-lineno">225</tt>  <tt class="py-line">        <tt class="py-docstring">"""constructor for Language class"""</tt> </tt>
+<a name="L226"></a><tt class="py-lineno">226</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name" targets="Method pyAlchemy.alchemyapi.AlchemyAPI.language()=pyAlchemy.alchemyapi.AlchemyAPI-class.html#language"><a title="pyAlchemy.alchemyapi.AlchemyAPI.language" class="py-name" href="#" onclick="return doclink('link-8', 'language', 'link-8');">language</a></tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L227"></a><tt class="py-lineno">227</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">iso</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+<a name="L228"></a><tt class="py-lineno">228</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">native</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L229"></a><tt class="py-lineno">229</tt>  <tt class="py-line">         </tt>
+<a name="Language.setLanguage"></a><div id="Language.setLanguage-def"><a name="L230"></a><tt class="py-lineno">230</tt> <a class="py-toggle" href="#" id="Language.setLanguage-toggle" onclick="return toggle('Language.setLanguage');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#setLanguage">setLanguage</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">lang</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.setLanguage-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.setLanguage-expanded"><a name="L231"></a><tt class="py-lineno">231</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the language"""</tt> </tt>
+<a name="L232"></a><tt class="py-lineno">232</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.language" class="py-name" href="#" onclick="return doclink('link-9', 'language', 'link-8');">language</a></tt> <tt class="py-op">=</tt> <tt class="py-name">lang</tt> </tt>
+</div><a name="L233"></a><tt class="py-lineno">233</tt>  <tt class="py-line">         </tt>
+<a name="Language.getLanguage"></a><div id="Language.getLanguage-def"><a name="L234"></a><tt class="py-lineno">234</tt> <a class="py-toggle" href="#" id="Language.getLanguage-toggle" onclick="return toggle('Language.getLanguage');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#getLanguage">getLanguage</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.getLanguage-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.getLanguage-expanded"><a name="L235"></a><tt class="py-lineno">235</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the language"""</tt> </tt>
+<a name="L236"></a><tt class="py-lineno">236</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-10" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.language" class="py-name" href="#" onclick="return doclink('link-10', 'language', 'link-8');">language</a></tt>     </tt>
+</div><a name="L237"></a><tt class="py-lineno">237</tt>  <tt class="py-line">     </tt>
+<a name="Language.setIso"></a><div id="Language.setIso-def"><a name="L238"></a><tt class="py-lineno">238</tt> <a class="py-toggle" href="#" id="Language.setIso-toggle" onclick="return toggle('Language.setIso');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#setIso">setIso</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">iso</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.setIso-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.setIso-expanded"><a name="L239"></a><tt class="py-lineno">239</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the iso"""</tt> </tt>
+<a name="L240"></a><tt class="py-lineno">240</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">iso</tt> <tt class="py-op">=</tt> <tt class="py-name">iso</tt> </tt>
+</div><a name="L241"></a><tt class="py-lineno">241</tt>  <tt class="py-line">         </tt>
+<a name="Language.getIso"></a><div id="Language.getIso-def"><a name="L242"></a><tt class="py-lineno">242</tt> <a class="py-toggle" href="#" id="Language.getIso-toggle" onclick="return toggle('Language.getIso');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#getIso">getIso</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.getIso-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.getIso-expanded"><a name="L243"></a><tt class="py-lineno">243</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the iso"""</tt> </tt>
+<a name="L244"></a><tt class="py-lineno">244</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">iso</tt> </tt>
+</div><a name="L245"></a><tt class="py-lineno">245</tt>  <tt class="py-line">     </tt>
+<a name="Language.setNative"></a><div id="Language.setNative-def"><a name="L246"></a><tt class="py-lineno">246</tt> <a class="py-toggle" href="#" id="Language.setNative-toggle" onclick="return toggle('Language.setNative');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#setNative">setNative</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">native</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.setNative-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.setNative-expanded"><a name="L247"></a><tt class="py-lineno">247</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the native speakers"""</tt> </tt>
+<a name="L248"></a><tt class="py-lineno">248</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">native</tt> <tt class="py-op">=</tt> <tt class="py-name">native</tt> </tt>
+</div><a name="L249"></a><tt class="py-lineno">249</tt>  <tt class="py-line">         </tt>
+<a name="Language.getNative"></a><div id="Language.getNative-def"><a name="L250"></a><tt class="py-lineno">250</tt> <a class="py-toggle" href="#" id="Language.getNative-toggle" onclick="return toggle('Language.getNative');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Language-class.html#getNative">getNative</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Language.getNative-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Language.getNative-expanded"><a name="L251"></a><tt class="py-lineno">251</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the native speakers"""</tt> </tt>
+<a name="L252"></a><tt class="py-lineno">252</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">native</tt>          </tt>
+</div></div><a name="L253"></a><tt class="py-lineno">253</tt>  <tt class="py-line">         </tt>
+<a name="L254"></a><tt class="py-lineno">254</tt>  <tt class="py-line"> </tt>
+<a name="L255"></a><tt class="py-lineno">255</tt>  <tt class="py-line"> </tt>
+<a name="Author"></a><div id="Author-def"><a name="L256"></a><tt class="py-lineno">256</tt> <a class="py-toggle" href="#" id="Author-toggle" onclick="return toggle('Author');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Author-class.html">Author</a><tt class="py-op">:</tt> </tt>
+</div><div id="Author-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="Author-expanded"><a name="L257"></a><tt class="py-lineno">257</tt>  <tt class="py-line">    <tt class="py-docstring">"""Class for representing Author Extraction"""</tt> </tt>
+<a name="L258"></a><tt class="py-lineno">258</tt>  <tt class="py-line">     </tt>
+<a name="Author.__init__"></a><div id="Author.__init__-def"><a name="L259"></a><tt class="py-lineno">259</tt> <a class="py-toggle" href="#" id="Author.__init__-toggle" onclick="return toggle('Author.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Author-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Author.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Author.__init__-expanded"><a name="L260"></a><tt class="py-lineno">260</tt>  <tt class="py-line">        <tt class="py-docstring">"""constructor for author class"""</tt> </tt>
+<a name="L261"></a><tt class="py-lineno">261</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method pyAlchemy.alchemyapi.AlchemyAPI.author()=pyAlchemy.alchemyapi.AlchemyAPI-class.html#author"><a title="pyAlchemy.alchemyapi.AlchemyAPI.author" class="py-name" href="#" onclick="return doclink('link-11', 'author', 'link-11');">author</a></tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
+</div><a name="L262"></a><tt class="py-lineno">262</tt>  <tt class="py-line">     </tt>
+<a name="Author.setAuthor"></a><div id="Author.setAuthor-def"><a name="L263"></a><tt class="py-lineno">263</tt> <a class="py-toggle" href="#" id="Author.setAuthor-toggle" onclick="return toggle('Author.setAuthor');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Author-class.html#setAuthor">setAuthor</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">author</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Author.setAuthor-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Author.setAuthor-expanded"><a name="L264"></a><tt class="py-lineno">264</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for setting the author"""</tt> </tt>
+<a name="L265"></a><tt class="py-lineno">265</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.author" class="py-name" href="#" onclick="return doclink('link-12', 'author', 'link-11');">author</a></tt> <tt class="py-op">=</tt> <tt id="link-13" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.author" class="py-name" href="#" onclick="return doclink('link-13', 'author', 'link-11');">author</a></tt> </tt>
+</div><a name="L266"></a><tt class="py-lineno">266</tt>  <tt class="py-line">         </tt>
+<a name="Author.getAuthor"></a><div id="Author.getAuthor-def"><a name="L267"></a><tt class="py-lineno">267</tt> <a class="py-toggle" href="#" id="Author.getAuthor-toggle" onclick="return toggle('Author.getAuthor');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="pyAlchemy.AlchemyStructure.Author-class.html#getAuthor">getAuthor</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Author.getAuthor-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="Author.getAuthor-expanded"><a name="L268"></a><tt class="py-lineno">268</tt>  <tt class="py-line">        <tt class="py-docstring">"""method for getting the object"""</tt> </tt>
+<a name="L269"></a><tt class="py-lineno">269</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="pyAlchemy.alchemyapi.AlchemyAPI.author" class="py-name" href="#" onclick="return doclink('link-14', 'author', 'link-11');">author</a></tt> </tt>
+</div></div><a name="L270"></a><tt class="py-lineno">270</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Sun Feb 02 00:41:45 2014
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
