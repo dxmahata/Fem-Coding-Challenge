@@ -240,7 +240,7 @@ class ProcessVideos:
             
             #hash table entry
 #            self.videoCollection[videoId] = video
-            self.videoCollection[count] = video
+            self.videoCollection[str(videoId)] = video
             
             #setting the tags associated with the video
             video.setTags(tags)
@@ -248,10 +248,10 @@ class ProcessVideos:
             #hash table entry
             for tag in tags:
                 if tag.lower() in self.videoTagIndexTable:
-                    self.videoTagIndexTable[tag.lower()].append(count)
+                    self.videoTagIndexTable[tag.lower()].append(str(videoId))
                 else:
                     self.videoTagIndexTable[tag.lower()] = []
-                    self.videoTagIndexTable[tag.lower()].append(count)
+                    self.videoTagIndexTable[tag.lower()].append(str(videoId))
             
             print "-------------------"
             
