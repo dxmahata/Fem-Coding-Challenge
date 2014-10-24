@@ -1,5 +1,3 @@
-Below is a coding assignment we'd like you to complete if you're interested in this position.  
-
 You may approach this in the modern programming language of your choice, but Python is preferred.
 
 Attached is a json file with data on 474 youtube videos in the television and movie category.  We'd like you to do the following:
@@ -16,4 +14,3 @@ automate the fetching of this data].
 create an algorithm than takes on video as input and generates three related videos from the set.  
 Using your algorithm, write a file that shows the related videos for every video in the set.
 
-Please share all the code and files you used on www.github.com with user: meghanab79.
